@@ -15,6 +15,9 @@
 		42C91E021CFC15CC00D82086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C91E001CFC15CC00D82086 /* LaunchScreen.storyboard */; };
 		42C91E0D1CFC15CC00D82086 /* TestCalabashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C91E0C1CFC15CC00D82086 /* TestCalabashTests.swift */; };
 		42C91E181CFC15CC00D82086 /* TestCalabashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C91E171CFC15CC00D82086 /* TestCalabashUITests.swift */; };
+		42C91E261CFC181D00D82086 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 42C91E251CFC181D00D82086 /* Gemfile */; };
+		42C91E271CFC181D00D82086 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 42C91E251CFC181D00D82086 /* Gemfile */; };
+		42C91E281CFC181D00D82086 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 42C91E251CFC181D00D82086 /* Gemfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		42C91E131CFC15CC00D82086 /* TestCalabashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCalabashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C91E171CFC15CC00D82086 /* TestCalabashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCalabashUITests.swift; sourceTree = "<group>"; };
 		42C91E191CFC15CC00D82086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C91E251CFC181D00D82086 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		42C91DE81CFC15CC00D82086 = {
 			isa = PBXGroup;
 			children = (
+				42C91E251CFC181D00D82086 /* Gemfile */,
 				42C91DF31CFC15CC00D82086 /* TestCalabash */,
 				42C91E0B1CFC15CC00D82086 /* TestCalabashTests */,
 				42C91E161CFC15CC00D82086 /* TestCalabashUITests */,
@@ -232,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C91E261CFC181D00D82086 /* Gemfile in Resources */,
 				42C91E021CFC15CC00D82086 /* LaunchScreen.storyboard in Resources */,
 				42C91DFF1CFC15CC00D82086 /* Assets.xcassets in Resources */,
 				42C91DFA1CFC15CC00D82086 /* Main.storyboard in Resources */,
@@ -242,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C91E271CFC181D00D82086 /* Gemfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C91E281CFC181D00D82086 /* Gemfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestCalabash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					CFNetwork,
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.irawd.TestCalabash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
