@@ -5,5 +5,3 @@ Scenario: Sample Scenario
   And I have done a specific thing
   When I do something
   Then something should happen
-  Then I toggle the switch
-  And take picture

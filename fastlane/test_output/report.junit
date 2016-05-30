@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='3' failures='0'>
+  <testsuite name='TestCalabashTests.TestCalabashTests' tests='2' failures='0'>
+    <testcase classname='TestCalabashTests.TestCalabashTests' name='testExample' time='0.001'/>
+    <testcase classname='TestCalabashTests.TestCalabashTests' name='testPerformanceExample' time='0.273'/>
+  </testsuite>
+  <testsuite name='TestCalabashUITests.TestCalabashUITests' tests='1' failures='0'>
+    <testcase classname='TestCalabashUITests.TestCalabashUITests' name='testExample' time='4.055'/>
+  </testsuite>
+</testsuites>
